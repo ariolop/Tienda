@@ -1,0 +1,17 @@
+
+
+/* Estilos para el footer */
+.columna1 h5
+{
+    color: #3F64B5;
+}
+
+.nav-item a
+{
+    color: white;
+}
+.nav-item a:hover
+{
+    color: white;
+    text-decoration: underline;
+}
