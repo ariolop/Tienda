@@ -1,4 +1,11 @@
+/* Estilos para el nav */
+nav, .dropdown-menu {
+    background-color: #3F64B5;
+}
 
+.dropdown-item:hover {
+    background-color: #6880b3;
+}
 
 /* Estilos para el footer */
 .columna1 h5
