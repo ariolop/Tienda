@@ -5,7 +5,7 @@
 }
 
 /* Estilos para el nav */
-nav, .dropdown-menu {
+.menu, .dropdown-menu {
     background-color: #3F64B5;
 }
 
