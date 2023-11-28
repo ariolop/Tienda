@@ -9,7 +9,7 @@ nav, .dropdown-menu {
 }
 
 /* Estilos para el footer */
-.columna1 h5
+#titulosColumnas
 {
     color: #3F64B5;
 }
@@ -23,3 +23,13 @@ nav, .dropdown-menu {
     color: white;
     text-decoration: underline;
 }
+#itemFooter
+{
+
+}
+    #itemFooter a:hover 
+    {
+        text-decoration: none !important;
+        background-color:  rgba(141, 141, 141, 0.58) !important;
+        text-align: center;
+    }
