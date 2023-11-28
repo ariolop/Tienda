@@ -7,6 +7,13 @@ nav, .dropdown-menu {
     background-color: #6880b3;
     text-decoration: none;
 }
+/* Estilos para el carrusel */
+.carousel-indicators button 
+{
+    border-radius: 50%; 
+    width: 20px; 
+    height: 20px; 
+}
 
 /* Estilos para el footer */
 #titulosColumnas
@@ -31,5 +38,8 @@ nav, .dropdown-menu {
     {
         text-decoration: none !important;
         background-color:  rgba(141, 141, 141, 0.58) !important;
-        text-align: center;
     }
+#copyFooter
+{
+    color: rgba(81, 126, 231, 0.457);
+}
