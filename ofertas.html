@@ -1,15 +1,9 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-    <!-- Colores:
-        - Azul -> rgb(81,127,231)
-        - Negro -> rgb(0,0,0)     
-        - Blanco -> rgb(255,255,255)
-        Negro y blanco están en Bootstrap
-    -->
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>PcProfesional</title>
+    <title>Ofertas</title>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.2/font/bootstrap-icons.min.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
     <link rel="stylesheet" href="estilos.css">
@@ -47,7 +41,7 @@
                                 <a class="nav-link active text-decoration-none" aria-current="page" href="#">Inicio</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link text-decoration-none" href="ofertas.html">Ofertas</a>
+                                <a class="nav-link text-decoration-none" href="#">Ofertas</a>
                             </li>
                             <li class="nav-item">
                                 <a class="nav-link text-decoration-none" href="#">Últimas novedades</a>
@@ -75,38 +69,39 @@
         </div>
     </div>
 
-    <div class="container-fluid">
-        <!-- Carousel ofertas (Imagenes) -->
-    </div>
-
-    <div class="container">
-        <div class="row">
-            <div class="col-3">
-                <!-- Categoria con imagenes -->
+    <div class="container my-5">
+        <div class="row text-center">
+            <h2>Ofertas</h2>
+        </div>
+        <div class="row justify-content-around">
+            <div class="card col-3">
+                <img src="img/catOrdenadores/ordenadoresPortatiles/imgPequeña.jpg" class="card-img img-fluid w-50 align-self-center" alt="...">
+                <div class="card-body">
+                    <p class="small">ASUS Chromebook CX1400CKA-EK0138 Intel Celeron N4500/8GB/64GB eMMC/14"</p>
+                    <h5 class="card-title ">589,99€</h5>
+                    <div>
+                        <img src="img/5stars.png" alt="valoracion">
+                        <p class="d-inline">(25)</p>
+                    </div>
+                </div>
             </div>
-            <div class="col-3">
-                <!-- Categoria con imagenes -->
+            <div class="card col-3">
+                <img src="..." class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title">Card title</h5>
+                  <a href="#" class="btn btn-primary btn-sm">Go somewhere</a>
+                </div>
             </div>
-            <div class="col-3">
-                <!-- Categoria con imagenes -->
-            </div>
-            <div class="col-3">
-                <!-- Categoria con imagenes -->
-            </div>
-            <div class="col-3">
-                <!-- Categoria con imagenes -->
-            </div>
-            <div class="col-3">
-                <!-- Categoria con imagenes -->
-            </div>
-            <div class="col-3">
-                <!-- Categoria con imagenes -->
-            </div>
-            <div class="col-3">
-                <!-- Categoria con imagenes -->
+            <div class="card col-3">
+                <img src="..." class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title">Card title</h5>
+                  <a href="#" class="btn btn-primary btn-sm">Go somewhere</a>
+                </div>
             </div>
         </div>
     </div>
+
 
     <!-- Footer -->
     <div class="container-fluid bg-black mt-5">
