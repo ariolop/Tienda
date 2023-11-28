@@ -3,8 +3,9 @@ nav, .dropdown-menu {
     background-color: #3F64B5;
 }
 
-.dropdown-item:hover {
+.dropdown-item:hover ,.nav-item:hover{
     background-color: #6880b3;
+    text-decoration: none;
 }
 
 /* Estilos para el footer */
