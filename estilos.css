@@ -10,9 +10,14 @@
 }
 
 .dropdown-item:hover ,.nav-item:hover{
-    background-color: #6880b3;
+    background-color: #456fc9;
     text-decoration: none;
 }
+
+.bg-lightblue{
+    background-color: #3f64b5bb;
+}
+
 /* Estilos para el carrusel */
 .carousel-indicators button 
 {
