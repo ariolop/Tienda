@@ -54,3 +54,13 @@
 {
     color: rgba(81, 126, 231, 0.457);
 }
+
+/* Estilos identificarse */
+#iconosIdentificarse i
+{
+    font-size: 5rem;
+}
+#parteIzquierda
+{
+    border-right: 1px solid #CCCCCC;
+}
