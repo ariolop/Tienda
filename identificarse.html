@@ -27,13 +27,14 @@
     <!-- CONTENIDO -->
     <div class="container-fluid">
         <div class="row justify-content-between mt-5">
-            <div class="col-6" id="parteIzquierda">
+            <!-- Parte izquierda que se ocultará en dispositivos más pequeños que 'md' -->
+            <div class="col-6 d-none d-lg-block" id="parteIzquierda">
                 <div class="container ms-5">
                     <div class="row ms-5">
                         <div class="col-2" id="iconosIdentificarse">
-                            <i class="bi bi-truck bi-2x"></i>
+                            <i class="bi bi-truck"></i>
                         </div>
-                        <div class="col-10 align-self-center">
+                        <div class="col-9 align-self-center">
                             <h4 class="fw-bold">Gestiona tus pedidos</h4>
                             <p>Ten el control de todos tus pedidos y recibe notificaciones con el seguimiento</p>
                         </div>
@@ -42,29 +43,30 @@
                         <div class="col-2 ms" id="iconosIdentificarse">
                             <i class="bi bi-bag-heart"></i>
                         </div>
-                        <div class="col-10 align-self-center">
+                        <div class="col-9 align-self-center">
                             <h4 class="fw-bold">Lista de deseos personalizada</h4>
                             <p>Guarda tus productos favoritos en las listas de deseos personalizadas</p>
                         </div>
                     </div>
                 </div>
             </div>
-            <div class="col-6 justify-content-center" id="parteDerecha">
+            <!-- Parte derecha que se mostrará en todos los tamaños de pantalla -->
+            <div class="col-12 col-lg-6 justify-content-center mx-auto" id="parteDerecha">
                 <div class="container">
                     <div class="row justify-content-center">
                         <div class="col-8">
                             <!-- Tu formulario de inicio de sesión -->
-                            <h2 class="fw-bold">Iniciar sesion</h2>
+                            <h2 class="fw-bold">Iniciar sesión</h2>
                             <button class="w-75 mt-5 justify-content-center border-1 border-black bg-white">
                                 <h5>
                                     <i class="bi bi-google"></i> Iniciar sesión con Google
                                 </h5>
                             </button>
-                            <hr class="w-75" >
-                            <form action="" class="justify-content-center ">
+                            <hr class="w-75">
+                            <form action="" class="justify-content-center">
                                 <input type="email" name="email" id="email" class="w-75" placeholder="E-mail*">
                                 <input type="password" name="password" id="password" class="w-75 mt-4" placeholder="Contraseña*">
-                                <input type="submit " value="Iniciar sesion" class="w-50 mt-4 justify-content-centery">
+                                <input type="submit" value="Iniciar sesión" class="w-50 mt-4 justify-content-centery">
                             </form>
                         </div>
                     </div>
@@ -72,6 +74,7 @@
             </div>
         </div>
     </div>
+    
     
     <!-- Footer -->
     <div class="container-fluid bg-black mt-5 p-0 ">
