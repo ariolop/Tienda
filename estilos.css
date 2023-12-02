@@ -5,11 +5,15 @@
 }
 
 /* Estilos para el nav */
+.text-small{
+    font-size: 10px;
+}
+
 .menu {
     background-color: #3F64B5;
 }
 
-.dropdown-item:hover ,.nav-item:hover{
+.dropdown-item:hover ,.nav-item:hover, .cerrar:hover{
     background-color: #456fc9;
     text-decoration: none;
 }
