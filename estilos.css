@@ -76,3 +76,20 @@
 {
     border-right: 1px solid #CCCCCC;
 }
+/* Estilos cesta */
+
+#botonPedido
+{
+    background-color: #3F64B5;
+    border: #CCCCCC;
+}
+
+#botonPedido:hover
+{
+    background-color: #3f64b58c;
+}
+@media (max-width: 991.98px) {
+    body {
+        text-align: center;
+    }
+}
