@@ -12,11 +12,12 @@
 <body>
     <!-- Cabecera -->
     <div class="container-fluid">
-        <div class="row bg-black px-5 py-1 justify-content-evenly">
-            <div class="col-2">
+        <div class="row bg-black px-3 py-1">
+            <div class="col-2 text-center">
                 <a href="index.html"><img src="img/logo.png" alt="Logo"></a>
             </div>
-            <div class="col-4 my-auto">
+            <div class="col-5 col-sm-7 col-md-2"></div>
+            <div class="d-none d-md-block col-md-4 my-auto">
                 <form action="#" method="get">
                     <div class="input-group">
                         <input type="text" class="form-control" name="buscar" placeholder="Buscar artículos" aria-label="Username" aria-describedby="basic-addon1">
@@ -24,107 +25,119 @@
                     </div>
                 </form>
             </div>
-            <div class="col-2 my-auto text-end">
-                <a class="btn btn-dark" href="identificarse.html">Identificarse</a>
+            <div class="d-block d-md-none col-1 my-auto me-2 mx-sm-0 text-end">
+                <a class="btn btn-dark" data-bs-toggle="collapse" href="#collapseSearch" role="button" aria-expanded="false" aria-controls="collapseExample"><i class="bi bi-search"></i></a>
             </div>
-            <div class="col-2 my-auto text-start">
+            <div class="d-none d-md-block col-md-2"></div>
+            <div class="col-1 my-auto me-2 mx-sm-0 text-end">
+                <a class="btn btn-dark" href="identificarse.html"><i class="bi bi-person"></i></a>
+            </div>
+            <div class="col-1 my-auto text-start">
                 <a class="btn btn-dark position-relative" href="cesta.html">
-                    <i class="bi bi-cart"></i> Cesta
-                    <span class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger">3</span>
+                    <i class="bi bi-cart"></i>
+                    <span class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger text-small">3</span>
                 </a>
             </div>
         </div>
+        <div class="row collapse bg-lightblue justify-content-center" id="collapseSearch">
+            <div class="col-10 my-3">
+                <form action="#" method="get">
+                    <div class="input-group">
+                        <input type="text" class="form-control" name="buscar" placeholder="Buscar artículos" aria-label="Username" aria-describedby="basic-addon1">
+                        <button class="btn btn-light" type="submit" id="button-addon2"><span class="bi bi-search"></span></button>
+                    </div>
+                </form>
+            </div>
+        </div>
         <div class="row">
-            <nav class="navbar navbar-expand-lg menu">
+            <nav class="navbar navbar-expand-md menu">
                 <div class="container-fluid">
-                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                        <span class="navbar-toggler-icon"></span>
+                    <button class="btn d-inline d-md-none py-1 px-2" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvas" aria-controls="offcanvasExample">
+                        <i class="bi bi-list fs-5"></i>
                     </button>
-                    <div class="collapse navbar-collapse" id="navbarNav">
-                        <ul class="navbar-nav justify-content-around w-100">
-                            <li class="nav-item">
-                                <a class="nav-link text-decoration-none" aria-current="page" href="index.html">Inicio</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link text-decoration-none active" href="ofertas.html">Ofertas</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link text-decoration-none" href="ultimasNovedades.html">Últimas novedades</a>
-                            </li>
-                            <li class="nav-item dropdown">
-                                <a class="nav-link dropdown-toggle text-decoration-none" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                                    Categorias
-                                </a>
-                                <ul class="dropdown-menu">
-                                    <li><a class="dropdown-item text-decoration-none" href="catOrdenadores1.html">Ordenadores</a></li>
-                                    <li><a class="dropdown-item text-decoration-none" href="catPerifericos1.html">Periféricos</a></li>
-                                    <li><a class="dropdown-item text-decoration-none" href="catSoftware.html">Software</a></li>
-                                </ul>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link text-decoration-none" href="quienesSomos.html">Quienes somos</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link text-decoration-none" aria-disabled="true" href="sostenibilidad.html">Sostenibilidad</a>
-                            </li>
-                        </ul>
+                    <div class="offcanvas offcanvas-start bg-lightblue" tabindex="-1" id="offcanvas" aria-labelledby="offcanvas">
+                        <div class="offcanvas-header">
+                            <button type="button" class="btn cerrar" data-bs-dismiss="offcanvas" aria-label="Close">
+                                <i class="bi bi-x-lg text-white"></i>
+                            </button>
+                        </div>
+                        <div class="offcanvas-body">
+                            <ul class="navbar-nav justify-content-around w-100">
+                                <li class="nav-item rounded-1 px-2">
+                                    <a class="nav-link active text-decoration-none" aria-current="page" href="index.html">Inicio</a>
+                                </li>
+                                <li class="nav-item rounded-1 px-2">
+                                    <a class="nav-link text-decoration-none" href="ofertas.html">Ofertas</a>
+                                </li>
+                                <li class="nav-item rounded-1 px-2">
+                                    <a class="nav-link text-decoration-none" href="ultimasNovedades.html">Últimas novedades</a>
+                                </li>
+                                <li class="nav-item dropdown rounded-1 px-2">
+                                    <a class="nav-link dropdown-toggle text-decoration-none" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                        Categorias
+                                    </a>
+                                    <ul class="dropdown-menu bg-lightblue mb-2 border-0">
+                                        <li><a class="dropdown-item text-decoration-none" href="catOrdenadores1.html">Ordenadores</a></li>
+                                        <li><a class="dropdown-item text-decoration-none" href="catPerifericos1.html">Periféricos</a></li>
+                                        <li><a class="dropdown-item text-decoration-none" href="catSoftware.html">Software</a></li>
+                                    </ul>
+                                </li>
+                                <li class="nav-item rounded-1 px-2">
+                                    <a class="nav-link text-decoration-none" href="quienesSomos.html">Quienes somos</a>
+                                </li>
+                                <li class="nav-item rounded-1 px-2">
+                                    <a class="nav-link text-decoration-none" aria-disabled="true" href="sostenibilidad.html">Sostenibilidad</a>
+                                </li>
+                            </ul>
+                        </div>
                     </div>
                 </div>
             </nav>
-        </div>
+        </div>       
     </div>
 
     <!-- Ofertas top -->
-    <div class="container my-5">
+    <div class="container-lg container-fluid my-5">
         <div class="row text-center mb-2">
             <h2>Ofertas Top</h2>
         </div>
-        <div class="row justify-content-around">
-            <div class="card col-3">
+        <div class="row justify-content-evenly">
+            <div class="card col-9 col-sm-5 col-md-3 my-3 my-sm-0">
                 <img src="img/catOrdenadores/ordenadoresPortatiles/asus-chromebook-intel-celeron-n4500-8gb-64gb_small.jpg" class="card-img img-fluid w-50 align-self-center" alt="...">
-                <div class="card-body position-relative">
+                <div class="card-body">
                     <p class="small">ASUS Chromebook CX1400CKA-EK0138 Intel Celeron N4500/8GB/64GB eMMC/14"</p>
                     <div>
-                        <h5 class="d-inline card-title text-danger">589,99€</h5><p class="d-inline small text-danger">  -%10</p>
+                        <h5 class="d-inline card-title text-danger">589,99€</h5><p class="ms-1 d-inline text-decoration-line-through small text-secondary">689,99€</p>
                     </div>
                     <div>
                         <img src="img/5stars.png" alt="valoracion">
                         <p class="d-inline">(25)</p>
-                    </div>
-                    <div class="cajaOferta position-absolute">
-                        <img src="img/descuento.png" alt="icono descuento">
                     </div>
                 </div>
             </div>
-            <div class="card col-3">
+            <div class="card col-9 col-sm-5 col-md-3 my-3 my-sm-0">
                 <img src="img/catOrdenadores/ordenadoresPortatiles/asus-chromebook-intel-celeron-n4500-8gb-64gb_small.jpg" class="card-img img-fluid w-50 align-self-center" alt="...">
-                <div class="card-body position-relative">
+                <div class="card-body">
                     <p class="small">ASUS Chromebook CX1400CKA-EK0138 Intel Celeron N4500/8GB/64GB eMMC/14"</p>
                     <div>
-                        <h5 class="d-inline card-title text-danger">589,99€</h5><p class="d-inline small text-danger">  -%10</p>
+                        <h5 class="d-inline card-title text-danger">589,99€</h5><p class="ms-1 d-inline text-decoration-line-through small text-secondary">689,99€</p>
                     </div>
                     <div>
                         <img src="img/5stars.png" alt="valoracion">
                         <p class="d-inline">(25)</p>
-                    </div>
-                    <div class="cajaOferta position-absolute">
-                        <img src="img/descuento.png" alt="">
                     </div>
                 </div>
             </div>
-            <div class="card col-3">
+            <div class="card col-9 col-sm-5 col-md-3 my-3 my-md-0">
                 <img src="img/catOrdenadores/ordenadoresPortatiles/asus-chromebook-intel-celeron-n4500-8gb-64gb_small.jpg" class="card-img img-fluid w-50 align-self-center" alt="...">
-                <div class="card-body position-relative">
+                <div class="card-body">
                     <p class="small">ASUS Chromebook CX1400CKA-EK0138 Intel Celeron N4500/8GB/64GB eMMC/14"</p>
                     <div>
-                        <h5 class="d-inline card-title text-danger">589,99€</h5><p class="d-inline small text-danger">  -%10</p>
+                        <h5 class="d-inline card-title text-danger">589,99€</h5><p class="ms-1 d-inline text-decoration-line-through small text-secondary">689,99€</p>
                     </div>
                     <div>
                         <img src="img/5stars.png" alt="valoracion">
                         <p class="d-inline">(25)</p>
-                    </div>
-                    <div class="cajaOferta position-absolute">
-                        <img src="img/descuento.png" alt="">
                     </div>
                 </div>
             </div>
@@ -132,56 +145,47 @@
     </div>
 
     <!-- Ofertas en ordenadores -->
-    <div class="container my-5">
+    <div class="container-lg container-fluid my-5">
         <div class="row text-center mb-2">
             <h2>Las mejores ofertas en ordenadores</h2>
         </div>
         <div class="row justify-content-around">
-            <div class="card col-3">
+            <div class="card col-9 col-sm-5 col-md-3 my-3 my-sm-0">
                 <img src="img/catOrdenadores/ordenadoresPortatiles/asus-chromebook-intel-celeron-n4500-8gb-64gb_small.jpg" class="card-img img-fluid w-50 align-self-center" alt="...">
-                <div class="card-body position-relative">
+                <div class="card-body">
                     <p class="small">ASUS Chromebook CX1400CKA-EK0138 Intel Celeron N4500/8GB/64GB eMMC/14"</p>
                     <div>
-                        <h5 class="d-inline card-title text-danger">589,99€</h5><p class="d-inline small text-danger">  -%10</p>
+                        <h5 class="d-inline card-title text-danger">589,99€</h5><p class="ms-1 d-inline text-decoration-line-through small text-secondary">689,99€</p>
                     </div>
                     <div>
                         <img src="img/5stars.png" alt="valoracion">
                         <p class="d-inline">(25)</p>
-                    </div>
-                    <div class="cajaOferta position-absolute">
-                        <img src="img/descuento.png" alt="">
                     </div>
                 </div>
             </div>
-            <div class="card col-3">
+            <div class="card col-9 col-sm-5 col-md-3 my-3 my-sm-0">
                 <img src="img/catOrdenadores/ordenadoresPortatiles/asus-chromebook-intel-celeron-n4500-8gb-64gb_small.jpg" class="card-img img-fluid w-50 align-self-center" alt="...">
-                <div class="card-body position-relative">
+                <div class="card-body">
                     <p class="small">ASUS Chromebook CX1400CKA-EK0138 Intel Celeron N4500/8GB/64GB eMMC/14"</p>
                     <div>
-                        <h5 class="d-inline card-title text-danger">589,99€</h5><p class="d-inline small text-danger">  -%10</p>
+                        <h5 class="d-inline card-title text-danger">589,99€</h5><p class="ms-1 d-inline text-decoration-line-through small text-secondary">689,99€</p>
                     </div>
                     <div>
                         <img src="img/5stars.png" alt="valoracion">
                         <p class="d-inline">(25)</p>
-                    </div>
-                    <div class="cajaOferta position-absolute">
-                        <img src="img/descuento.png" alt="">
                     </div>
                 </div>
             </div>
-            <div class="card col-3">
+            <div class="card col-9 col-sm-5 col-md-3 my-3 my-md-0">
                 <img src="img/catOrdenadores/ordenadoresPortatiles/asus-chromebook-intel-celeron-n4500-8gb-64gb_small.jpg" class="card-img img-fluid w-50 align-self-center" alt="...">
-                <div class="card-body position-relative">
+                <div class="card-body">
                     <p class="small">ASUS Chromebook CX1400CKA-EK0138 Intel Celeron N4500/8GB/64GB eMMC/14"</p>
                     <div>
-                        <h5 class="d-inline card-title text-danger">589,99€</h5><p class="d-inline small text-danger">  -%10</p>
+                        <h5 class="d-inline card-title text-danger">589,99€</h5><p class="ms-1 d-inline text-decoration-line-through small text-secondary">689,99€</p>
                     </div>
                     <div>
                         <img src="img/5stars.png" alt="valoracion">
                         <p class="d-inline">(25)</p>
-                    </div>
-                    <div class="cajaOferta position-absolute">
-                        <img src="img/descuento.png" alt="">
                     </div>
                 </div>
             </div>
@@ -189,56 +193,47 @@
     </div>
 
     <!-- Ofertas en periféricos -->
-    <div class="container my-5">
+    <div class="container-lg container-fluid my-5">
         <div class="row text-center mb-2">
             <h2>Las mejores ofertas en periféricos</h2>
         </div>
         <div class="row justify-content-around">
-            <div class="card col-3">
+            <div class="card col-9 col-sm-5 col-md-3 my-3 my-sm-0">
                 <img src="img/catOrdenadores/ordenadoresPortatiles/asus-chromebook-intel-celeron-n4500-8gb-64gb_small.jpg" class="card-img img-fluid w-50 align-self-center" alt="...">
-                <div class="card-body position-relative">
+                <div class="card-body">
                     <p class="small">ASUS Chromebook CX1400CKA-EK0138 Intel Celeron N4500/8GB/64GB eMMC/14"</p>
                     <div>
-                        <h5 class="d-inline card-title text-danger">589,99€</h5><p class="d-inline small text-danger">  -%10</p>
+                        <h5 class="d-inline card-title text-danger">589,99€</h5><p class="ms-1 d-inline text-decoration-line-through small text-secondary">689,99€</p>
                     </div>
                     <div>
                         <img src="img/5stars.png" alt="valoracion">
                         <p class="d-inline">(25)</p>
-                    </div>
-                    <div class="cajaOferta position-absolute">
-                        <img src="img/descuento.png" alt="">
                     </div>
                 </div>
             </div>
-            <div class="card col-3">
+            <div class="card col-9 col-sm-5 col-md-3 my-3 my-sm-0">
                 <img src="img/catOrdenadores/ordenadoresPortatiles/asus-chromebook-intel-celeron-n4500-8gb-64gb_small.jpg" class="card-img img-fluid w-50 align-self-center" alt="...">
-                <div class="card-body position-relative">
+                <div class="card-body">
                     <p class="small">ASUS Chromebook CX1400CKA-EK0138 Intel Celeron N4500/8GB/64GB eMMC/14"</p>
                     <div>
-                        <h5 class="d-inline card-title text-danger">589,99€</h5><p class="d-inline small text-danger">  -%10</p>
+                        <h5 class="d-inline card-title text-danger">589,99€</h5><p class="ms-1 d-inline text-decoration-line-through small text-secondary">689,99€</p>
                     </div>
                     <div>
                         <img src="img/5stars.png" alt="valoracion">
                         <p class="d-inline">(25)</p>
-                    </div>
-                    <div class="cajaOferta position-absolute">
-                        <img src="img/descuento.png" alt="">
                     </div>
                 </div>
             </div>
-            <div class="card col-3">
+            <div class="card col-9 col-sm-5 col-md-3 my-3 my-md-0">
                 <img src="img/catOrdenadores/ordenadoresPortatiles/asus-chromebook-intel-celeron-n4500-8gb-64gb_small.jpg" class="card-img img-fluid w-50 align-self-center" alt="...">
-                <div class="card-body position-relative">
+                <div class="card-body">
                     <p class="small">ASUS Chromebook CX1400CKA-EK0138 Intel Celeron N4500/8GB/64GB eMMC/14"</p>
                     <div>
-                        <h5 class="d-inline card-title text-danger">589,99€</h5><p class="d-inline small text-danger">  -%10</p>
+                        <h5 class="d-inline card-title text-danger">589,99€</h5><p class="ms-1 d-inline text-decoration-line-through small text-secondary">689,99€</p>
                     </div>
                     <div>
                         <img src="img/5stars.png" alt="valoracion">
                         <p class="d-inline">(25)</p>
-                    </div>
-                    <div class="cajaOferta position-absolute">
-                        <img src="img/descuento.png" alt="">
                     </div>
                 </div>
             </div>
@@ -246,40 +241,34 @@
     </div>
 
     <!-- Ofertas en software -->
-    <div class="container my-5 mb-2">
+    <div class="container-lg container-fluid my-5 mb-2">
         <div class="row text-center mb-2">
             <h2>Las mejores ofertas en software</h2>
         </div>
         <div class="row justify-content-around">
-            <div class="card col-4">
+            <div class="card col-9 col-sm-5 col-md-3 my-3 my-sm-0">
                 <img src="img/catOrdenadores/ordenadoresPortatiles/asus-chromebook-intel-celeron-n4500-8gb-64gb_small.jpg" class="card-img img-fluid w-50 align-self-center" alt="...">
-                <div class="card-body position-relative">
+                <div class="card-body">
                     <p class="small">ASUS Chromebook CX1400CKA-EK0138 Intel Celeron N4500/8GB/64GB eMMC/14"</p>
                     <div>
-                        <h5 class="d-inline card-title text-danger">589,99€</h5><p class="d-inline small text-danger">  -%10</p>
+                        <h5 class="d-inline card-title text-danger">589,99€</h5><p class="ms-1 d-inline text-decoration-line-through small text-secondary">689,99€</p>
                     </div>
                     <div>
                         <img src="img/5stars.png" alt="valoracion">
                         <p class="d-inline">(25)</p>
-                    </div>
-                    <div class="cajaOferta position-absolute">
-                        <img src="img/descuento.png" alt="">
                     </div>
                 </div>
             </div>
-            <div class="card col-4">
+            <div class="card col-9 col-sm-5 col-md-3 my-3 my-sm-0">
                 <img src="img/catOrdenadores/ordenadoresPortatiles/asus-chromebook-intel-celeron-n4500-8gb-64gb_small.jpg" class="card-img img-fluid w-50 align-self-center" alt="...">
-                <div class="card-body position-relative">
+                <div class="card-body">
                     <p class="small">ASUS Chromebook CX1400CKA-EK0138 Intel Celeron N4500/8GB/64GB eMMC/14"</p>
                     <div>
-                        <h5 class="d-inline card-title text-danger">589,99€</h5><p class="d-inline small text-danger">  -%10</p>
+                        <h5 class="d-inline card-title text-danger">589,99€</h5><p class="ms-1 d-inline text-decoration-line-through small text-secondary">689,99€</p>
                     </div>
                     <div>
                         <img src="img/5stars.png" alt="valoracion">
                         <p class="d-inline">(25)</p>
-                    </div>
-                    <div class="cajaOferta position-absolute">
-                        <img src="img/descuento.png" alt="">
                     </div>
                 </div>
             </div>
