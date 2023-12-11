@@ -37,6 +37,15 @@
     width: 20px; 
     height: 20px; 
 }
+.card 
+{
+    overflow: hidden; 
+    transition: transform 0.3s ease; 
+}
+.card:hover 
+{
+    transform: scale(0.9); 
+}
 
 /* Estilos para el footer */
 #titulosColumnas
