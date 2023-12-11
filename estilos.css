@@ -1,3 +1,8 @@
+/* Estilos para porqueComprar.html */
+.tab-contente {
+    height: fit-content;
+}
+
 /* Estilos para las ofertas */
 .cajaOferta{
     top: 60%;
@@ -13,7 +18,7 @@
     background-color: #3F64B5;
 }
 
-.dropdown-item:hover ,.nav-item:hover, .cerrar:hover{
+.dropdown-item:hover , .offcanvas-body .nav-item:hover, .cerrar:hover{
     background-color: #456fc9;
     text-decoration: none;
 }
@@ -53,24 +58,25 @@
     color: #3F64B5;
 }
 
-.nav-item a
+.offcanvas-body .nav-item a
 {
     color: white;
 }
-.nav-item a:hover
+.offcanvas-body .nav-item a:hover
 {
     color: white;
     text-decoration: underline;
 }
 #itemFooter
 {
-
+    color: white;
 }
     #itemFooter a:hover 
     {
         text-decoration: none !important;
         background-color:  rgba(141, 141, 141, 0.58) !important;
     }
+    
 #copyFooter
 {
     color: rgba(81, 126, 231, 0.457);
@@ -104,5 +110,4 @@
 {
     background-color: #3f64b58c;
 }
-
 
