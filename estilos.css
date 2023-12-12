@@ -1,6 +1,18 @@
 /* Estilos para porqueComprar.html */
-.tab-contente {
-    height: fit-content;
+.btn-blue {
+    background-color: #3F64B5;
+}
+
+.btn-blue:hover {
+    background-color: #3F64B5;
+}
+
+.btn-blue.show {
+    background-color: #5171b6 !important;
+}
+
+#nav-tab {
+    font-size: 15px;
 }
 
 /* Estilos para las ofertas */
@@ -28,7 +40,7 @@
 }
 
 .bg-lightblue{
-    background-color: #3f64b5bb;
+    background-color: #3f64b5ef;
 }
 
 .bg-lightwhite{

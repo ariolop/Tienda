@@ -108,41 +108,21 @@
         </div>       
     </div>
 
-    <div class="container my-5">
-        <nav class="">
-            <div class="d-flex d-md-none dropdown justify-content-center" id="nav-tab" role="tablist">
-                <button class="btn btn-secondary dropdown-toggle w-75" type="button" data-bs-toggle="dropdown" aria-expanded="false">
-                  Ver más...
-                </button>
-                <ul class="dropdown-menu w-75 p-0">
-                    <li class="bg-lightblue dropdown-item">
-                        <button class="w-100 nav-link active" id="nav-como-comprar-tab" data-bs-toggle="tab" data-bs-target="#nav-como-comprar" type="button" role="tab" aria-controls="nav-como-comprar" aria-selected="false">Como comprar</button>
-                    </li>
-                    <li class="bg-lightblue dropdown-item">
-                        <button class="w-100 nav-link" id="nav-formas-pago-tab" data-bs-toggle="tab" data-bs-target="#nav-formas-pago" type="button" role="tab" aria-controls="nav-formas-pago" aria-selected="false">Formas de pago</button>
-                    </li>
-                    <li class="bg-lightblue dropdown-item">
-                        <button class="w-100 nav-link" id="nav-envio-tab" data-bs-toggle="tab" data-bs-target="#nav-envio" type="button" role="tab" aria-controls="nav-envio" aria-selected="false">Gastos de envío</button>
-                    </li>
-                    <li class="bg-lightblue dropdown-item">
-                        <button class="w-100 nav-link" id="nav-preguntas-tab" data-bs-toggle="tab" data-bs-target="#nav-preguntas" type="button" role="tab" aria-controls="nav-preguntas" aria-selected="false">Preguntas frecuentes</button>
-                    </li>
-                    <li class="bg-lightblue dropdown-item">
-                        <button class="w-100 nav-link" id="nav-opiniones-tab" data-bs-toggle="tab" data-bs-target="#nav-opiniones" type="button" role="tab" aria-controls="nav-opiniones" aria-selected="false">Opiniones de clientes</button>
-                    </li>                    
-                </ul>
-            </div>
-
-            <div class="d-none d-md-flex nav nav-tabs justify-content-center" id="nav-tab" role="tablist">
-                <button class="col-2 nav-link active" id="nav-como-comprar-tab" data-bs-toggle="tab" data-bs-target="#nav-como-comprar" type="button" role="tab" aria-controls="nav-como-comprar" aria-selected="false">Como comprar</button>
-                <button class="col-2 nav-link" id="nav-formas-pago-tab" data-bs-toggle="tab" data-bs-target="#nav-formas-pago" type="button" role="tab" aria-controls="nav-formas-pago" aria-selected="false">Formas de pago</button>
-                <button class="col-2 nav-link" id="nav-envio-tab" data-bs-toggle="tab" data-bs-target="#nav-envio" type="button" role="tab" aria-controls="nav-envio" aria-selected="false">Gastos de envío</button>
-                <button class="col-2 nav-link" id="nav-preguntas-tab" data-bs-toggle="tab" data-bs-target="#nav-preguntas" type="button" role="tab" aria-controls="nav-preguntas" aria-selected="false">Preguntas frecuentes</button>
-                <button class="col-2 nav-link" id="nav-opiniones-tab" data-bs-toggle="tab" data-bs-target="#nav-opiniones" type="button" role="tab" aria-controls="nav-opiniones" aria-selected="false">Opiniones de clientes</button>
+    <div class="container-fluid container-md my-5">
+        <nav>
+            <div class="nav nav-tabs justify-content-center m-0" id="nav-tab" role="tablist">
+                <button class="col-sm-2 nav-link active" id="nav-como-comprar-tab" data-bs-toggle="tab" data-bs-target="#nav-como-comprar" type="button" role="tab" aria-controls="nav-como-comprar" aria-selected="false">Como comprar</button>
+                <button class="col-sm-2 nav-link" id="nav-formas-pago-tab" data-bs-toggle="tab" data-bs-target="#nav-formas-pago" type="button" role="tab" aria-controls="nav-formas-pago" aria-selected="false">Formas de pago</button>
+                <button class="col-sm-2 nav-link" id="nav-envio-tab" data-bs-toggle="tab" data-bs-target="#nav-envio" type="button" role="tab" aria-controls="nav-envio" aria-selected="false">Gastos de envío</button>
+                <button class="col-sm-2 nav-link" id="nav-preguntas-tab" data-bs-toggle="tab" data-bs-target="#nav-preguntas" type="button" role="tab" aria-controls="nav-preguntas" aria-selected="false">Preguntas frecuentes</button>
+                <button class="col-sm-2 nav-link" id="nav-opiniones-tab" data-bs-toggle="tab" data-bs-target="#nav-opiniones" type="button" role="tab" aria-controls="nav-opiniones" aria-selected="false">Opiniones</button>
             </div>
         </nav>
-        <div class="tab-content my-2" id="nav-tabContent">
+        <div class="tab-content mt-3" id="nav-tabContent" style="min-height: 50vh;">
             <div class="tab-pane fade show active" id="nav-como-comprar" role="tabpanel" aria-labelledby="nav-como-comprar">
+                <div class="d-block d-md-none mt-3">
+                    <h3 class="text-center">Como comprar</h3>
+                </div>
                 <ol>
                     <li class="p-1">
                         <strong>Explora nuestra tienda:</strong> Navega por las categorías o usa la barra de búsqueda para encontrar el producto que deseas comprar.
@@ -177,9 +157,11 @@
                 </ol>
                 
             </div>
-            <div class="tab-pane fade" id="nav-formas-pago" role="tabpanel" aria-labelledby="nav-formas-pago">
+            <div class="tab-pane fade mt-3" id="nav-formas-pago" role="tabpanel" aria-labelledby="nav-formas-pago">
+                <div class="d-block d-md-none mt-3">
+                    <h3 class="text-center">Formas de pago</h3>
+                </div>
                 En nuestra tienda en línea, nos complace ofrecerte diversas opciones de pago para que puedas elegir la que mejor se adapte a tus preferencias y necesidades. A continuación, te detallamos las formas de pago disponibles:
-
                 <ol>
                     <li class="p-1">
                         <strong>Tarjeta de crédito/débito:</strong> Puedes realizar tus compras de manera rápida y segura utilizando tarjetas de crédito o débito. Durante el proceso de pago, simplemente introduce los detalles de tu tarjeta y procede con la transacción.
@@ -202,7 +184,10 @@
                 </ol>
                 
             </div>
-            <div class="tab-pane fade" id="nav-envio" role="tabpanel" aria-labelledby="nav-envio-tab">
+            <div class="tab-pane fade mt-3" id="nav-envio" role="tabpanel" aria-labelledby="nav-envio-tab">
+                <div class="d-block d-md-none mt-3">
+                    <h3 class="text-center">Gastos de envío</h3>
+                </div>
                 Los gastos de envío son esenciales para cubrir los costos logísticos y garantizar que tus productos lleguen de manera segura y en el tiempo estimado. Aquí hay algunos puntos clave relacionados con los gastos de envío en nuestra tienda:
                 <ol>
                     <li class="p-1">
@@ -222,7 +207,10 @@
                 </ol>
                 
             </div>
-            <div class="tab-pane fade my-3" id="nav-preguntas" role="tabpanel" aria-labelledby="nav-preguntas-tab">
+            <div class="tab-pane fade mt-3" id="nav-preguntas" role="tabpanel" aria-labelledby="nav-preguntas-tab">
+                <div class="d-block d-md-none mt-3 mb-3">
+                    <h3 class="text-center">Preguntas frecuentes</h3>
+                </div>
                 <div class="accordion" id="accordionPanelsStayOpenExample">
                     <div class="accordion-item">
                         <h2 class="accordion-header" id="panelsStayOpen-headingOne">
@@ -270,9 +258,12 @@
                     </div>
                   </div>
             </div>
-            <div class="tab-pane fade" id="nav-opiniones" role="tabpanel" aria-labelledby="nav-opiniones-tab">
-                <div class="row justify-content-evenly my-4">
-                    <div class="col-8 col-sm-5 col-md-3">
+            <div class="tab-pane fade mt-3" id="nav-opiniones" role="tabpanel" aria-labelledby="nav-opiniones-tab">
+                <div class="d-block d-md-none mt-3">
+                    <h3 class="text-center">Opiniones de clientes</h3>
+                </div>
+                <div class="row justify-content-center mt-4">
+                    <div class="col-8 col-sm-5 col-md-3 mx-1">
                         <div class="card border-0">
                             <img src="img/cara.jpg" class="card-img-top rounded-5" alt="cara">
                             <div class="card-body">
@@ -281,7 +272,7 @@
                             </div>
                           </div>
                     </div>
-                    <div class="col-8 col-sm-5 col-md-3">
+                    <div class="col-8 col-sm-5 col-md-3 mx-1">
                         <div class="card border-0">
                             <img src="img/cara.jpg" class="card-img-top rounded-5" alt="cara">
                             <div class="card-body">
@@ -290,7 +281,7 @@
                             </div>
                           </div>
                     </div>
-                    <div class="col-8 col-sm-5 col-md-3">
+                    <div class="col-8 col-sm-5 col-md-3 mx-1">
                         <div class="card border-0">
                             <img src="img/cara.jpg" class="card-img-top rounded-5" alt="cara">
                             <div class="card-body">
