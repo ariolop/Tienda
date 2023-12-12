@@ -76,7 +76,7 @@
                         <div class="offcanvas-body">
                             <ul class="navbar-nav justify-content-around w-100">
                                 <li class="nav-item rounded-1 px-1">
-                                    <a class="nav-link active text-decoration-none" aria-current="page" href="index.html">Inicio</a>
+                                    <a class="nav-link text-decoration-none" aria-current="page" href="index.html">Inicio</a>
                                 </li>
                                 <li class="nav-item rounded-1 px-1">
                                     <a class="nav-link text-decoration-none" href="ofertas.html">Ofertas</a>
@@ -109,13 +109,36 @@
     </div>
 
     <div class="container my-5">
-        <nav>
-            <div class="nav nav-tabs justify-content-center" id="nav-tab" role="tablist">
-                <button class="nav-link active" id="nav-como-comprar-tab" data-bs-toggle="tab" data-bs-target="#nav-como-comprar" type="button" role="tab" aria-controls="nav-como-comprar" aria-selected="true">Cómo comprar</button>
-                <button class="nav-link" id="nav-formas-pago-tab" data-bs-toggle="tab" data-bs-target="#nav-formas-pago" type="button" role="tab" aria-controls="nav-formas-pago" aria-selected="false">Formas de pago</button>
-                <button class="nav-link" id="nav-envio-tab" data-bs-toggle="tab" data-bs-target="#nav-envio" type="button" role="tab" aria-controls="nav-envio" aria-selected="false">Gastos de envío</button>
-                <button class="nav-link" id="nav-preguntas-tab" data-bs-toggle="tab" data-bs-target="#nav-preguntas" type="button" role="tab" aria-controls="nav-preguntas" aria-selected="false">Preguntas frecuentes</button>
-                <button class="nav-link" id="nav-opiniones-tab" data-bs-toggle="tab" data-bs-target="#nav-opiniones" type="button" role="tab" aria-controls="nav-opiniones" aria-selected="false">Opiniones de clientes</button>
+        <nav class="">
+            <div class="d-flex d-md-none dropdown justify-content-center" id="nav-tab" role="tablist">
+                <button class="btn btn-secondary dropdown-toggle w-75" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  Ver más...
+                </button>
+                <ul class="dropdown-menu w-75 p-0">
+                    <li class="bg-lightblue dropdown-item">
+                        <button class="w-100 nav-link active" id="nav-como-comprar-tab" data-bs-toggle="tab" data-bs-target="#nav-como-comprar" type="button" role="tab" aria-controls="nav-como-comprar" aria-selected="false">Como comprar</button>
+                    </li>
+                    <li class="bg-lightblue dropdown-item">
+                        <button class="w-100 nav-link" id="nav-formas-pago-tab" data-bs-toggle="tab" data-bs-target="#nav-formas-pago" type="button" role="tab" aria-controls="nav-formas-pago" aria-selected="false">Formas de pago</button>
+                    </li>
+                    <li class="bg-lightblue dropdown-item">
+                        <button class="w-100 nav-link" id="nav-envio-tab" data-bs-toggle="tab" data-bs-target="#nav-envio" type="button" role="tab" aria-controls="nav-envio" aria-selected="false">Gastos de envío</button>
+                    </li>
+                    <li class="bg-lightblue dropdown-item">
+                        <button class="w-100 nav-link" id="nav-preguntas-tab" data-bs-toggle="tab" data-bs-target="#nav-preguntas" type="button" role="tab" aria-controls="nav-preguntas" aria-selected="false">Preguntas frecuentes</button>
+                    </li>
+                    <li class="bg-lightblue dropdown-item">
+                        <button class="w-100 nav-link" id="nav-opiniones-tab" data-bs-toggle="tab" data-bs-target="#nav-opiniones" type="button" role="tab" aria-controls="nav-opiniones" aria-selected="false">Opiniones de clientes</button>
+                    </li>                    
+                </ul>
+            </div>
+
+            <div class="d-none d-md-flex nav nav-tabs justify-content-center" id="nav-tab" role="tablist">
+                <button class="col-2 nav-link active" id="nav-como-comprar-tab" data-bs-toggle="tab" data-bs-target="#nav-como-comprar" type="button" role="tab" aria-controls="nav-como-comprar" aria-selected="false">Como comprar</button>
+                <button class="col-2 nav-link" id="nav-formas-pago-tab" data-bs-toggle="tab" data-bs-target="#nav-formas-pago" type="button" role="tab" aria-controls="nav-formas-pago" aria-selected="false">Formas de pago</button>
+                <button class="col-2 nav-link" id="nav-envio-tab" data-bs-toggle="tab" data-bs-target="#nav-envio" type="button" role="tab" aria-controls="nav-envio" aria-selected="false">Gastos de envío</button>
+                <button class="col-2 nav-link" id="nav-preguntas-tab" data-bs-toggle="tab" data-bs-target="#nav-preguntas" type="button" role="tab" aria-controls="nav-preguntas" aria-selected="false">Preguntas frecuentes</button>
+                <button class="col-2 nav-link" id="nav-opiniones-tab" data-bs-toggle="tab" data-bs-target="#nav-opiniones" type="button" role="tab" aria-controls="nav-opiniones" aria-selected="false">Opiniones de clientes</button>
             </div>
         </nav>
         <div class="tab-content my-2" id="nav-tabContent">
@@ -199,7 +222,7 @@
                 </ol>
                 
             </div>
-            <div class="tab-pane fade" id="nav-preguntas" role="tabpanel" aria-labelledby="nav-preguntas-tab">
+            <div class="tab-pane fade my-3" id="nav-preguntas" role="tabpanel" aria-labelledby="nav-preguntas-tab">
                 <div class="accordion" id="accordionPanelsStayOpenExample">
                     <div class="accordion-item">
                         <h2 class="accordion-header" id="panelsStayOpen-headingOne">
@@ -248,10 +271,34 @@
                   </div>
             </div>
             <div class="tab-pane fade" id="nav-opiniones" role="tabpanel" aria-labelledby="nav-opiniones-tab">
-                <div class="row justify-content-evenly">
-                    <div class="placeholder col-3"></div>
-                    <div class="placeholder col-3"></div>
-                    <div class="placeholder col-3"></div>
+                <div class="row justify-content-evenly my-4">
+                    <div class="col-8 col-sm-5 col-md-3">
+                        <div class="card border-0">
+                            <img src="img/cara.jpg" class="card-img-top rounded-5" alt="cara">
+                            <div class="card-body">
+                                <p class="card-text">"Envíos rápidos, buena comunicación y con sorpresa incluida"</p>
+                                <img src="img/5stars.png" alt="Valoracion">
+                            </div>
+                          </div>
+                    </div>
+                    <div class="col-8 col-sm-5 col-md-3">
+                        <div class="card border-0">
+                            <img src="img/cara.jpg" class="card-img-top rounded-5" alt="cara">
+                            <div class="card-body">
+                                <p class="card-text">"Envíos rápidos, buena comunicación y con sorpresa incluida"</p>
+                                <img src="img/5stars.png" alt="Valoracion">
+                            </div>
+                          </div>
+                    </div>
+                    <div class="col-8 col-sm-5 col-md-3">
+                        <div class="card border-0">
+                            <img src="img/cara.jpg" class="card-img-top rounded-5" alt="cara">
+                            <div class="card-body">
+                                <p class="card-text">"Envíos rápidos, buena comunicación y con sorpresa incluida"</p>
+                                <img src="img/5stars.png" alt="Valoracion">
+                            </div>
+                          </div>
+                    </div>
                 </div>
             </div>
         </div>
