@@ -1,3 +1,14 @@
+/* Evento para recargar la página cuando hace clic en un enlace del footer de "porqueComprar.html" */
+
+document.addEventListener("click", (event) => {
+    if(event.target.classList.contains("enlaceFooter"))
+    {
+        setTimeout(() => {window.location.reload();}, 0);
+    }
+});
+
+/* Evento para cuando cargue la página saber que pestaña tiene que cargar */
+
 window.addEventListener("load", (event) => {
 
         switch (window.location.hash) {
